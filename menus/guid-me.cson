@@ -1,0 +1,14 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Guid Me'
+      'submenu': [
+        {
+          'label': 'Generate GUID'
+          'command': 'guid-me:generate'
+        }
+      ]
+    ]
+  }
+]
