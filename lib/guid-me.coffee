@@ -5,6 +5,6 @@ module.exports =
     atom.commands.add 'atom-workspace', "guid-me:generate-guid", => @generateGuid()
 
   generateGuid: ->
-    editor = atom.workspace.getActivePaneItem()
+    editor = atom.workspace.getActiveTextEditor()
     Guid = require 'guid'
     editor.insertText(Guid.raw())
